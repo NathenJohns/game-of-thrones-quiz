@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+English+SC');
+
+
+/*    BACKGROUND IMAGE FOR WEBSITE    */
+
+body {
+	font-family: 'IM Fell English', serif;
+	color: #fafafa;
+	background: url('/static/images/game-of-thrones-home.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+
+/*    NAVIGATION BAR    */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    float: left;
+}
+
+a {
+    color: #fafafa;
+    text-decoration: none;
+    background-color: transparent;
+    font-family: 'IM Fell English', serif;
+    font-size: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover {
+    color: #370301;
+    text-decoration: none;
+}
+
+i {
+    margin-right: 10px;
+}
+
+/*    OVERLAY    */
+.overlay {
+	background: #00000073;
+    height: 100%;
+    min-height: 100vh;
+}
+
+/*    INDEX PAGE    */
+
+ /*        BANNER    */
+ .banner {
+    background-color: #000000ad;
+    margin-bottom: 10px;
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'IM Fell English', serif;
+    font-size: 25px;
+    border-radius: 7.5px;
+}
+
+.home-page-heading {
+    margin-bottom: 15px;
+}
+ 
+ 
+/*        USERNAME INPUT    */
+.username-input {
+    font-size: 22.5px;
+    text-align: center;
+    border-radius: 7.5px;
+    width: 100%;
+    line-height: 50px;
+}
+
+/*        PLAY BUTTON    */
+.main-button {
+    background-color: #370301;
+    text-align: center;
+    border: none;
+    border-color: #370301;
+    color: #fafafa;
+    font-family: 'IM Fell English', serif;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    height: 75px;
+    border-radius: 7.5px;
+    transition: all 0.75s ease-in-out;
+    font-size: 22.5px;
+}
+
+.btn-success:hover {
+    color: #fafafa;
+    background-color: #59110de6;
+    border-color: #59110de6;
+}
+
+/*    TABLE AND LEADERBOARD PAGE    */
+.leaderboard-row-style {
+    justify-content: center;
+}
+
+.table-style {
+    text-align: center;
+    color: #fafafa;
+}
+
+.table {
+    width: 100%;
+    background-color: transparent;
+    font-size: 18px;
+}
+
+.user-score-title {
+    font-size: 22px;
+}
+
+.next-in-line-crown {
+    margin-left: -35px;
+    color: #a38e1de6;
+}
+
+/*    QUESTIONS PAGE    */
+
+.question-page-para-style {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 30px;
+}
+
+.question-section-style {
+    text-align: center;
+    background-color: #000000ad;
+    width: 100%;
+    padding-top: 20px;
+    border-radius: 7.5px;
+    transform: translate(0, 25px);
+}
+
+.question-heading-paragraph {
+    font-size: 25px;
+    margin-top: 30px;
+    margin-bottom: 25px;
+}
+
+.answer-input {
+    text-align: center;
+    font-size: 25px;
+    border-radius: 7.5px;
+    line-height: 50px;
+    width: 50%;
+}
+
+.button-position {
+    text-align: center;
+}
+
+.answer-button {
+    background-color: #370301;
+    border: none;
+    border-color: #370301;
+    color: #fafafa;
+    font-family: 'IM Fell English', serif;
+    font-size: 25px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 75px;
+    width: 50%;
+    border-radius: 7.5px;
+    transition: all 0.75s ease-in-out;
+}

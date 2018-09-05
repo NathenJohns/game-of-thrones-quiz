@@ -1,12 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+<section class="text-center">
+    <div class="banner">
+        <div class="home-page-heading">
+            <h1>Game of Thrones Quiz</h1>
+        </div>
+        <p>Welcome! You're about to play The Game of Thrones!</p>
+        <p>Standing between you and the Iron Throne are 10 questions.</p>
+        <p>You'll only have two chances to answer each one.</p>
+        <p>You'll receive points for correct answers but none for incorrect answers.</p>
+        <p>Each point takes you one step closer to the Throne.</p>
+        <p>Enter your Username below and click to play</p>
+        <h2>Remember, in the Game of Thrones, you win or you die!</h2>
+    </div>
+</section>
+<section>
+    <form method="POST" action="/questions/">
+        <input id="username" class="username-input" type="text" name="username" placeholder="Enter Username" pattern="^[a-zA-Z0-9]+$" maxlength="15" required/>
+        <button class="main-button btn btn-success btn-lg btn-block">PLAY</button>
+    </form>
+</section>
+{% endblock content %}

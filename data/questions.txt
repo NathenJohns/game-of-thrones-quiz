@@ -1,0 +1,102 @@
+[
+    {
+        "index": 1,
+        "question_text": "What is the name of the book series 'Game of Thrones' is based on? (Six Words)",
+        "question_answer": "A Song of Ice and Fire"
+    },
+    {
+        "index": 2,
+        "question_text": "Who wrote the books? (Four Words)",
+        "question_answer": "George R R Martin"
+    },
+    {
+        "index": 3,
+        "question_text": "What is the name of the chair which symbolises who is King or Queen of Westeros? The... (Two Words)",
+        "question_answer": "Iron Throne"
+    },
+    {
+        "index": 4,
+        "question_text": "What are the words of House Stark? (Three Words)",
+        "question_answer": "Winter is Coming"
+    },
+    {
+        "index": 5,
+        "question_text": "What creature symbolises the Targaryen house (One Word)",
+        "question_answer": "Dragon"
+    },
+    {
+        "index": 6,
+        "question_text": "What was the war known as after the death of King Robert? The War of the...(Two Words)",
+        "question_answer": "Five Kings"
+    },
+    {
+        "index": 7,
+        "question_text": "What is the position of chief advisor to the King more commonly known as? (Four Words)",
+        "question_answer": "Hand of the King"
+    },
+    {
+        "index": 8,
+        "question_text": "Which House commands the lands of The Reach? (One Word)",
+        "question_answer": "Tyrell"
+    },
+    {
+        "index": 9,
+        "question_text": "What is the barrier separating the Westeros from the Frozen North known as? The...(One Word)",
+        "question_answer": "Wall"
+    },
+    {
+        "index": 10,
+        "question_text": "Game of Thrones is based on which Countries History? The...(Two Words)",
+        "question_answer": "United Kingdom"
+    },
+    {
+        "index": 11,
+        "question_text": "Who was Daenerys Targaryen's first husband? (Two Words)",
+        "question_answer": "Khal Drogo"
+    },
+    {
+        "index": 12,
+        "question_text": "Who plays Lord Eddard Stark in the TV series Game of Thrones? (Two Words)",
+        "question_answer": "Sean Bean"
+    },
+    {
+        "index": 13,
+        "question_text": "The seat of House Stark is in the Northern Capital...(One Word)",
+        "question_answer": "Winterfell"
+    },
+    {
+        "index": 14,
+        "question_text": "The massacre of Robb Stark and his followers occurs at which event? The...(Two Words)",
+        "question_answer": "Red Wedding"
+    },
+    {
+        "index": 15,
+        "question_text": "What is the name of Jon Snow's direworlf? (One Word)",
+        "question_answer": "Ghost"
+    },
+    {
+        "index": 16,
+        "question_text": "What substance is used in the Battle of Blackwater that destroys most of the Baratheon fleet? (Two Words)",
+        "question_answer": "Wild Fire"
+    },
+    {
+        "index": 17,
+        "question_text": "What is the name of the continent east of Westeros? (One Word)",
+        "question_answer": "Essos"
+    },
+    {
+        "index": 18,
+        "question_text": "The Greyjoys reside where in Westeros? The...(Two Words)",
+        "question_answer": "Iron Islands"
+    },
+    {
+        "index": 19,
+        "question_text": "Who is known as 'The-King-Beyond-the-Wall' (Two Words)",
+        "question_answer": "Mance Rayder"
+    },
+    {
+        "index": 20,
+        "question_text": "What is the surname given to illegitimate children born in Dorne? (One Word)",
+        "question_answer": "Sand"
+    }
+]

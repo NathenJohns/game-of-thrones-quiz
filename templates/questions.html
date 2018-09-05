@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block title %}
+    <title>Questions</title>
+{% endblock title %}
+
+{% block content %}
+<section class="question-section-style">
+    <div>
+        <h2>Question: {{ context.question_index }}</h2>
+        <p class="question-heading-paragraph"> {{ context.question_text }} </p>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+                {% if messages %}
+                    {% for category, message in messages %}
+                        {% if category == 'error' %}
+                            <div class="messages alert alert-danger" role="alert">
+                              <strong>Whoops!</strong> {{ message }}
+                            </div>
+                        {% else %}
+                            <div class="messages alert alert-success" role="alert">
+                              <strong>Excellent!</strong> {{ message }}
+                            </div>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
+            {% endwith %}
+    </div>
+    <form method="POST">
+        <input type="text" class="answer-input" id="attempt_answer" name="attempt_answer" placeholder="Your answer" required>
+        <input type="hidden" name="question_index" id="question_index" value="{{ context.question_index }}">
+        <input type="hidden" name="current_score" id="current_score" value="{{ context.current_score }}">
+        <input type="hidden" name="attempt" id="attempt" value="{{ context.attempt }}">
+        <div class="button-position">
+            <button type="submit" class="answer-button btn btn-success">Next Question</button>
+        </div>
+    </form>
+        <p class="lead">Current Score: <strong>{{ context.current_score }}</strong></p>
+        <p class="lead">Current Attempt: <strong>{{ context.attempt }}</strong></p>
+</section>
+
+{% endblock content %}

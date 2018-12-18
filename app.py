@@ -19,19 +19,6 @@ answers = {
     3: "Iron Throne"
 }
 
-    #OTHER GLOBALS
-score = 0
-attempt = 1
-question_index = 1
-question_text = questions[1]
-question_answer = answers[1]
-context = {
-    'question_index': question_index,
-    'question_text': question_text,
-    'current_score': score,
-    'attempt': attempt
-}
-
 #ROUTE FOR USER INSTRUCTIONS AND START OF QUIZ
 @app.route('/')
 def index():
@@ -45,9 +32,48 @@ def leaderboard():
 #ROUTE TO INITIALIZE QUESTIONS ONCE USERNAME SUBMITTED
 @app.route('/questions/', methods = ['GET', 'POST'])
 def get_questions():
-    if request.method == 'POST':
-        form = request.form
-        return render_template("questions.html", context=context)
+    if request.method == 'GET':
+
+        #DEFAULTS
+        score = 0
+        attempt = 1
+        question_index = 1
+        question_text = questions[1]
+        question_answer = answers[1]
+        context = {
+            'question_index': question_index,
+            'question_text': question_text,
+            'current_score': score,
+            'attempt': attempt,
+        }
+        
+    else:
+        question_index = int(request.form.get('question_index'))
+        attempt_answer = request.form.get('attempt_answer')
+        score = int(request.form.get('current_score'))
+        attempt = int(request.form.get('attempt'))
+        
+        question_text = questions[question_index]
+        question_answer = answers[1]
+       
+        if attempt_answer == question_answer:
+            question_index = int(request.form.get('question_index')) + 1
+            score += 1
+            attempt = 0
+            question_text = questions[question_index]
+        else:
+            question_index = request.form.get('question_index')
+            attempt += 1
+            
+        context = {
+            'question_index': question_index,
+            'question_text': question_text,
+            'current_score': score,
+            'attempt': attempt,
+        }
+        
+        
+    return render_template("questions.html", context=context)
 
 if __name__ == '__main__':
     app.run(host=os.environ.get('IP'), port=int(os.environ.get('PORT')), debug=True)

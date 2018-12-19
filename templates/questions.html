@@ -9,6 +9,21 @@
     <div>
         <h2>Question: {{ context.question_index }}</h2>
         <p class="question-heading-paragraph"> {{ context.question_text }} </p>
+        {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+                {% for category, message in messages %}
+                    {% if category == 'error' %}
+                        <div class="messages alert alert-danger" role="alert">
+                          <strong>Sorry!</strong> {{ message }}
+                        </div>
+                    {% else %}
+                        <div class="messages alert alert-success" role="alert">
+                          <strong>Well done!</strong> {{ message }}
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            {% endif %}
+        {% endwith %}
     </div>
     <form method="POST">
         <input type="hidden" class="question_index" id="question_index" name="question_index" value="{{ context.question_index }}">
